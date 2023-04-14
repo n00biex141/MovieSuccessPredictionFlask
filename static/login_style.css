@@ -1,0 +1,399 @@
+ @import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+#body1{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.body{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image: url(.\MovieSuccessPrediction\static\img\2.jpg);
+	background-size: cover;
+	
+	z-index: 0;
+}
+
+
+.grad{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	z-index: 1;
+	opacity: 0.7;
+}
+
+.header{
+	position: absolute;
+	top: calc(30% - 35px);
+	left: calc(59% - 255px);
+	z-index: 2;
+}
+
+.header div{
+	float: left;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #5379fa !important;
+}
+.login{
+	position: absolute;
+	top: calc(45% - 75px);
+	left: calc(43% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 2;
+}
+.login input[type=text]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.login input[type=password]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.login input[type=button]{
+	width: 260px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.login input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.login input[type=button]:active{
+	opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=button]:focus{
+	outline: none;
+}
+.login2 input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login2 input[type=button]:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+.body2{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: 170%;
+	background-image: url(https://newevolutiondesigns.com/images/freebies/city-wallpaper-18.jpg);
+	z-index: 0;
+}
+
+.header2{
+	position: absolute;
+	top: calc(8% - 35px);
+	left: calc(54% - 255px);
+	z-index: 2;
+}
+
+.header2 div{
+	float: left;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.header2 div span{
+	color: #5379fa !important;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #afb8cc;
+	margin-top:-1%;
+	margin-left:-1%;
+	width: 102%;
+}
+
+li {
+    float: left;
+	width:25%
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+.Film_Entry{
+	background-color:white;
+	position: absolute;
+	top: calc(25% - 75px);
+	left: calc(17% - 50px);
+	height: 145%;
+	width: 73%;
+	padding: 10px;
+	z-index: 2;
+}
+.Film_Entry input[type=text]{
+	width: 200px;
+	height: 15px;
+	border: 1px solid black;
+	border-radius: 2px;
+	color: black;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.Film_Entry select{
+	width: 200px;
+	height: 25px;
+	border: 1px solid black;
+	border-radius: 2px;
+	font-family: 'Exo', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.Film_Entry input[type=button]{
+	width: 100px;
+	height: 35px;
+	border: 1px solid black;
+	cursor: pointer;
+	border-radius: 2px;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+	margin-left:45%;
+}
+
+.Film_Entry input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.Film_Entry input[type=button]:active{
+	opacity: 0.6;
+}
+
+.body3{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: 120%;
+	background-image: url(https://newevolutiondesigns.com/images/freebies/city-wallpaper-18.jpg);
+	z-index: 0;
+}
+.NewFilm_Entry{
+	background-color:white;
+	position: absolute;
+	top: calc(25% - 75px);
+	left: calc(17% - 50px);
+	height: 90%;
+	width: 73%;
+	padding: 10px;
+	z-index: 2;
+}
+.NewFilm_Entry input[type=text]{
+	width: 200px;
+	height: 15px;
+	border: 1px solid black;
+	border-radius: 2px;
+	color: black;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.NewFilm_Entry select{
+	width: 200px;
+	height: 25px;
+	border: 1px solid black;
+	border-radius: 2px;
+	font-family: 'Exo', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.NewFilm_Entry input[type=button]{
+	width: 100px;
+	height: 35px;
+	border: 1px solid black;
+	cursor: pointer;
+	border-radius: 2px;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+	margin-left:45%;
+}
+
+.NewFilm_Entry input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.NewFilm_Entry input[type=button]:active{
+	opacity: 0.6;
+}
+
+
+.body4{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	background-image: url(https://newevolutiondesigns.com/images/freebies/city-wallpaper-18.jpg);
+	z-index: 0;
+}
+.header4{
+	position: absolute;
+	top: calc(20% - 35px);
+	left: calc(54% - 255px);
+	z-index: 2;
+}
+
+.header4 div{
+	float: left;
+	color: #fff;
+	font-family: 'Exo';
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.header4 div span{
+	color: #5379fa !important;
+}
+.Result_Entry{
+	background-color:white;
+	position: absolute;
+	top: calc(40% - 75px);
+	left: calc(17% - 50px);
+	height: 50%;
+	width: 73%;
+	padding: 10px;
+	z-index: 2;
+}
+.Result_Entry input[type=text]{
+	width: 200px;
+	height: 15px;
+	border: 1px solid black;
+	border-radius: 2px;
+	color: black;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.Result_Entry input[type=button]{
+	width: 100px;
+	height: 35px;
+	border: 1px solid black;
+	cursor: pointer;
+	border-radius: 2px;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+	margin-left:45%;
+}
+
+.Result_Entry input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.Result_Entry input[type=button]:active{
+	opacity: 0.6;
+}
+

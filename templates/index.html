@@ -1,0 +1,737 @@
+ <html>
+ 
+ <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" crossorigin="anonymous"></script>
+ </head>
+ 
+ <body>	
+
+	<link rel="stylesheet" href="./static/style.css">
+
+	<!-- img -->
+
+	<!-- maindiv parent -->
+
+	<div class="parentdiv">
+
+	<div>
+		<img class="img1" src="./static/img/1.jpg" alt="">
+	</div>
+
+
+	<div class="allformcss">
+
+	<h4>Predict of UpComing Bollywood Movie</h4>
+
+	<form action="{{url_for('predict')}}">
+		<div style="display: flex; gap: 20px;">
+	<div>
+		<p class="para">Director</p>
+		<select name='director' required>
+			<option value="S.S. Rajamouli">S.S. Rajamouli</option>
+			<option value="Advait Chandan">Advait Chandan</option>
+			<option value="Ali Abbas Zafar">Ali Abbas Zafar</option>
+			<option value="Rohit Shetty">Rohit Shetty</option>
+			<option value="Saket Chaudhary">Saket Chaudhary</option>
+			<option value="Shree Narayan Singh">Shree Narayan Singh</option>
+			<option value="Rahul Dholakia">Rahul Dholakia</option>
+			<option value="Atlee">Atlee</option>
+			<option value="Kabir Khan">Kabir Khan</option>
+			<option value="David Dhawan">David Dhawan</option>
+			<option value="Shashank Khaitan">Shashank Khaitan</option>
+			<option value="Subhash Kapoor">Subhash Kapoor</option>
+			<option value="V.V. Vinayak">V.V. Vinayak</option>
+			<option value="Ravi Udyawar">Ravi Udyawar</option>
+			<option value="Sanjay Gupta">Sanjay Gupta</option>
+			<option value="Imtiaz Ali">Imtiaz Ali</option>
+			<option value="K.S. Ravindra">K.S. Ravindra</option>
+			<option value="Siva">Siva</option>
+			<option value="A.R. Murugadoss">A.R. Murugadoss</option>
+			<option value="Harish Shankar">Harish Shankar</option>
+			<option value="Hari">Hari</option>
+			<option value="Bharathan">Bharathan</option>
+			<option value="Mohit Suri">Mohit Suri</option>
+			<option value="Mrighdeep Lamba">Mrighdeep Lamba</option>
+			<option value="Milan Luthria">Milan Luthria</option>
+			<option value="Kishore Kumar Pardasani">Kishore Kumar Pardasani</option>
+			<option value="Anees Bazmee">Anees Bazmee</option>
+			<option value="Anurag Basu">Anurag Basu</option>
+			<option value="Sekhar Kammula">Sekhar Kammula</option>
+			<option value="James Erskine">James Erskine</option>
+			<option value="Mohan Raja">Mohan Raja</option>
+			<option value="Radha Krishna Jagarlamudi">Radha Krishna Jagarlamudi</option>
+			<option value="Venu Sriram">Venu Sriram</option>
+			<option value="Santhosh Ananddram">Santhosh Ananddram</option>
+			<option value="R.S. Prasanna">R.S. Prasanna</option>
+			<option value="Sankalp Reddy">Sankalp Reddy</option>
+			<option value="Gayatri">Gayatri</option>
+			<option value="Trinadha Rao Nakkina">Trinadha Rao Nakkina</option>
+			<option value="Shiva Nirvana">Shiva Nirvana</option>
+			<option value="H. Vinoth">H. Vinoth</option>
+			<option value="Anil Ravipudi">Anil Ravipudi</option>
+			<option value="Satish Vegesna">Satish Vegesna</option>
+			<option value="Ashwiny Iyer Tiwari">Ashwiny Iyer Tiwari</option>
+			<option value="Soundarya Rajinikanth Vishagan">Soundarya Rajinikanth Vishagan</option>
+			<option value="Shivam Nair">Shivam Nair</option>
+			<option value="Anshai Lal">Anshai Lal</option>
+			<option value="Sandeep Reddy Vanga">Sandeep Reddy Vanga</option>
+			<option value="Sabir Khan">Sabir Khan</option>
+			<option value="Kalyan Krishna">Kalyan Krishna</option>
+			<option value="Teja">Teja</option>
+			<option value="Suresh Triveni">Suresh Triveni</option>
+			<option value="Jibu Jacob">Jibu Jacob</option>
+			<option value="Harsha">Harsha</option>
+			<option value="S Krishna">S Krishna</option>
+			<option value="Maruthi Dasari">Maruthi Dasari</option>
+			<option value="Gagan Bhullar">Gagan Bhullar</option>
+			<option value="Haneef Adeni">Haneef Adeni</option>
+			<option value="P. Vasu">P. Vasu</option>
+			<option value="Jay.k">Jay.k</option>
+			<option value="Mani Ratnam">Mani Ratnam</option>
+			<option value="Arun Gopy">Arun Gopy</option>
+			<option value="Milind Rau">Milind Rau</option>
+			<option value="Omkar">Omkar</option>
+			<option value="Boyapati Srinu">Boyapati Srinu</option>
+			<option value="Sathyan Anthikad">Sathyan Anthikad</option>
+			<option value="Puri Jagannadh">Puri Jagannadh</option>
+			<option value="Midhun Manuel Thomas">Midhun Manuel Thomas</option>
+			<option value="Mysskin">Mysskin</option>
+			<option value="Vikram K. Kumar">Vikram K. Kumar</option>
+			<option value="Thirumala Kishore">Thirumala Kishore</option>
+			<option value="Sampath Nandi">Sampath Nandi</option>
+			<option value="K.V. Anand">K.V. Anand</option>
+			<option value="Chinthan">Chinthan</option>
+			<option value="Sai Ramani">Sai Ramani</option>
+			<option value="Amal Neerad">Amal Neerad</option>
+			<option value="Mahesh Narayanan">Mahesh Narayanan</option>
+			<option value="Gopichand Malineni">Gopichand Malineni</option>
+			<option value="Lakshman">Lakshman</option>
+			<option value="Althaf Salim">Althaf Salim</option>
+			<option value="Lal Jose">Lal Jose</option>
+			<option value="Prakash">Prakash</option>
+			<option value="Soubin Shahir">Soubin Shahir</option>
+			<option value="Narthan">Narthan</option>
+			<option value="K. Raghavendra Rao">K. Raghavendra Rao</option>
+			<option value="B. Unnikrishnan">B. Unnikrishnan</option>
+			<option value="Hiphop Tamizha Adhi">Hiphop Tamizha Adhi</option>
+			<option value="Dileesh Pothan">Dileesh Pothan</option>
+			<option value="Ajai Vasudev">Ajai Vasudev</option>
+			<option value="Jinu Abraham">Jinu Abraham</option>
+			<option value="Suni">Suni</option>
+			<option value="Lijo Jose Pellissery">Lijo Jose Pellissery</option>
+			<option value="Sudheer Varma">Sudheer Varma</option>
+			<option value="Chethan Kumar">Chethan Kumar</option>
+			<option value="Sidhartha Siva">Sidhartha Siva</option>
+			<option value="Tom Emmatty">Tom Emmatty</option>
+			<option value="Basil Joseph">Basil Joseph</option>
+			<option value="S. Shankar">S. Shankar</option>
+			<option value="Rajkumar Hirani">Rajkumar Hirani</option>
+			<option value="Sanjay Leela Bhansali">Sanjay Leela Bhansali</option>
+			<option value="Sriram Raghavan">Sriram Raghavan</option>
+			<option value="Vijay Krishna Acharya">Vijay Krishna Acharya</option>
+			<option value="Remo DSouza">Remo DSouza</option>
+			<option value="Ahmed Khan">Ahmed Khan</option>
+			<option value="Prashanth Neel">Prashanth Neel</option>
+			<option value="Amit Ravindernath Sharma">Amit Ravindernath Sharma</option>
+			<option value="Malhotra P. Siddharth">Malhotra P. Siddharth</option>
+			<option value="Sukumar">Sukumar</option>
+			<option value="Meghna Gulzar">Meghna Gulzar</option>
+			<option value="Aanand L. Rai">Aanand L. Rai</option>
+			<option value="R. Balki">R. Balki</option>
+			<option value="Amar Kaushik">Amar Kaushik</option>
+			<option value="Koratala Siva">Koratala Siva</option>
+			<option value="Pa. Ranjith">Pa. Ranjith</option>
+			<option value="Reema Kagti">Reema Kagti</option>
+			<option value="Trivikram Srinivas">Trivikram Srinivas</option>
+			<option value="Raj Kumar Gupta">Raj Kumar Gupta</option>
+			<option value="Luv Ranjan">Luv Ranjan</option>
+			<option value="Shashanka Ghosh">Shashanka Ghosh</option>
+			<option value="Parasuram">Parasuram</option>
+			<option value="Sharat Katariya">Sharat Katariya</option>
+			<option value="Umesh Shukla">Umesh Shukla</option>
+			<option value="Milap Zaveri">Milap Zaveri</option>
+			<option value="Vignesh Shivan">Vignesh Shivan</option>
+			<option value="Abhishek Kapoor">Abhishek Kapoor</option>
+			<option value="Vakkantham Vamsi">Vakkantham Vamsi</option>
+			<option value="Abhishek Sharma">Abhishek Sharma</option>
+			<option value="Nag Ashwin">Nag Ashwin</option>
+			<option value="Pandiraj">Pandiraj</option>
+			<option value="Rosshan Andrrews">Rosshan Andrrews</option>
+			<option value="Ashok G.">Ashok G.</option>
+			<option value="P.S. Mithran">P.S. Mithran</option>
+			<option value="Vetrimaaran">Vetrimaaran</option>
+			<option value="Ponram">Ponram</option>
+			<option value="Smeep Kang">Smeep Kang</option>
+			<option value="C. Prem Kumar">C. Prem Kumar</option>
+			<option value="Shoojit Sircar">Shoojit Sircar</option>
+			<option value="V.A. Shrikumar Menon">V.A. Shrikumar Menon</option>
+			<option value="Prem">Prem</option>
+			<option value="Kamal Haasan">Kamal Haasan</option>
+			<option value="N. Linguswamy">N. Linguswamy</option>
+			<option value="C.S. Amudhan">C.S. Amudhan</option>
+			<option value="K.S. Ravikumar">K.S. Ravikumar</option>
+			<option value="Balaji Mohan">Balaji Mohan</option>
+			<option value="Sriram Adittya">Sriram Adittya</option>
+			<option value="Nelson Dilipkumar">Nelson Dilipkumar</option>
+			<option value="Venky Atluri">Venky Atluri</option>
+			<option value="Shaji Padoor">Shaji Padoor</option>
+			<option value="R. Ajay Gnanamuthu">R. Ajay Gnanamuthu</option>
+			<option value="Shakti Soundar Rajan">Shakti Soundar Rajan</option>
+			<option value="Soori">Soori</option>
+			<option value="Vijay Chandar">Vijay Chandar</option>
+			<option value="Rahul Sankrityan">Rahul Sankrityan</option>
+			<option value="Ram Kumar">Ram Kumar</option>
+			<option value="Jeethu Joseph">Jeethu Joseph</option>
+			<option value="Merlapaka Gandhi">Merlapaka Gandhi</option>
+			<option value="Fellini T.P.">Fellini T.P.</option>
+			<option value="Ajay Bhupathi">Ajay Bhupathi</option>
+			<option value="Sundar C.">Sundar C.</option>
+			<option value="Zakariya Mohammed">Zakariya Mohammed</option>
+			<option value="Anand Shankar">Anand Shankar</option>
+			<option value="Sashi Kiran Tikka">Sashi Kiran Tikka</option>
+			<option value="Anjali Menon">Anjali Menon</option>
+			<option value="Venky Kudumula">Venky Kudumula</option>
+			<option value="Pawan Kumar">Pawan Kumar</option>
+			<option value="Sriwass">Sriwass</option>
+			<option value="Vikram Sirikonda">Vikram Sirikonda</option>
+			<option value="Siddharth Anand">Siddharth Anand</option>
+			<option value="Sujeeth">Sujeeth</option>
+			<option value="Aditya Dhar">Aditya Dhar</option>
+			<option value="Raj Mehta">Raj Mehta</option>
+			<option value="Farhad Samji">Farhad Samji</option>
+			<option value="Jagan Shakti">Jagan Shakti</option>
+			<option value="Surender Reddy">Surender Reddy</option>
+			<option value="Zoya Akhtar">Zoya Akhtar</option>
+			<option value="Indra Kumar">Indra Kumar</option>
+			<option value="Prabhu Deva">Prabhu Deva</option>
+			<option value="Karthik Subbaraj">Karthik Subbaraj</option>
+			<option value="Vikas Bahl">Vikas Bahl</option>
+			<option value="Nitesh Tiwari">Nitesh Tiwari</option>
+			<option value="Anurag Singh">Anurag Singh</option>
+			<option value="Raaj Shaandilyaa">Raaj Shaandilyaa</option>
+			<option value="Vamshi Paidipally">Vamshi Paidipally</option>
+			<option value="Abhishek Varman">Abhishek Varman</option>
+			<option value="Sujoy Ghosh">Sujoy Ghosh</option>
+			<option value="Akiv Ali">Akiv Ali</option>
+			<option value="Raghava Lawrence">Raghava Lawrence</option>
+			<option value="Prithviraj Sukumaran">Prithviraj Sukumaran</option>
+			<option value="Laxman Utekar">Laxman Utekar</option>
+			<option value="Nikkhil Advani">Nikkhil Advani</option>
+			<option value="Mudassar Aziz">Mudassar Aziz</option>
+			<option value="Lokesh Kanagaraj">Lokesh Kanagaraj</option>
+			<option value="Punit Malhotra">Punit Malhotra</option>
+			<option value="Naganna">Naganna</option>
+			<option value="Anubhav Sinha">Anubhav Sinha</option>
+			<option value="Gopi Puthran">Gopi Puthran</option>
+			<option value="K. Selvaraghavan">K. Selvaraghavan</option>
+			<option value="Sachin Ravi">Sachin Ravi</option>
+			<option value="Pradeep Ranganathan">Pradeep Ranganathan</option>
+			<option value="Jagdeep Sidhu">Jagdeep Sidhu</option>
+			<option value="V. Harikrishna">V. Harikrishna</option>
+			<option value="Gowtam Tinnanuri">Gowtam Tinnanuri</option>
+			<option value="Vysakh">Vysakh</option>
+			<option value="Pawan Wadeyar">Pawan Wadeyar</option>
+			<option value="Bharat Kamma">Bharat Kamma</option>
+			<option value="Madhu C. Narayanan">Madhu C. Narayanan</option>
+			<option value="Thiagarajan Kumararaja">Thiagarajan Kumararaja</option>
+			<option value="Girish A.D.">Girish A.D.</option>
+			<option value="M. Padmakumar">M. Padmakumar</option>
+			<option value="Rajesh M. Selva">Rajesh M. Selva</option>
+			<option value="B.V. Nandini Reddy">B.V. Nandini Reddy</option>
+			<option value="Dhyan Sreenivasan">Dhyan Sreenivasan</option>
+			<option value="Jibi Joju">Jibi Joju</option>
+			<option value="M. Rajesh">M. Rajesh</option>
+			<option value="Jean Paul Lal">Jean Paul Lal</option>
+			<option value="M.D. Sridhar">M.D. Sridhar</option>
+			<option value="B.C. Noufal">B.C. Noufal</option>
+			<option value="Ramesh Varma">Ramesh Varma</option>
+			<option value="Magizh Thirumeni">Magizh Thirumeni</option>
+			<option value="Rambhala">Rambhala</option>
+			<option value="Khalid Rahman">Khalid Rahman</option>
+			<option value="Aashiq Abu">Aashiq Abu</option>
+			<option value="Prabhu">Prabhu</option>
+			<option value="K.V. Guhan">K.V. Guhan</option>
+			<option value="Manu Ashokan">Manu Ashokan</option>
+			<option value="Om Raut">Om Raut</option>
+			<option value="Hitesh Kewalya">Hitesh Kewalya</option>
+			<option value="Janjot Singh">Janjot Singh</option>
+			<option value="R.S. Durai Senthilkumar">R.S. Durai Senthilkumar</option>
+			<option value="Sachy">Sachy</option>
+			<option value="Anoop Sathyan">Anoop Sathyan</option>
+			<option value="Buchi Babu Sana">Buchi Babu Sana</option>
+			<option value="Venkat Prabhu">Venkat Prabhu</option>
+			<option value="Srinath Rajendran">Srinath Rajendran</option>
+			<option value="Anudeep K.V.">Anudeep K.V.</option>
+			<option value="Mari Selvaraj">Mari Selvaraj</option>
+			<option value="Mahesh Manjrekar">Mahesh Manjrekar</option>
+			<option value="Amarjit Singh Saron">Amarjit Singh Saron</option>
+			<option value="Tarun Sudhir">Tarun Sudhir</option>
+			<option value="Ranjit Tewari">Ranjit Tewari</option>
+			<option value="Priyadarshan">Priyadarshan</option>
+			<option value="Nandakishore">Nandakishore</option>
+			<option value="Bommarillu Baskar">Bommarillu Baskar</option>
+			<option value="Shiva Karthik">Shiva Karthik</option>
+			<option value="Bakkiyaraj Kannan">Bakkiyaraj Kannan</option>
+			<option value="Jofin T. Chacko">Jofin T. Chacko</option>
+			<option value="Duniya Vijay">Duniya Vijay</option>
+			<option value="Ayan Mukerji">Ayan Mukerji</option>
+			<option value="Rishab Shetty">Rishab Shetty</option>
+			<option value="Vivek Agnihotri">Vivek Agnihotri</option>
+			<option value="Abhishek Pathak">Abhishek Pathak</option>
+			<option value="Saagar K Chandra">Saagar K Chandra</option>
+			<option value="K.K. Radhakrishna Kumar">K.K. Radhakrishna Kumar</option>
+			<option value="Cibi Chakravarthi">Cibi Chakravarthi</option>
+			<option value="Chandoo Mondeti">Chandoo Mondeti</option>
+			<option value="Mithran Jawahar">Mithran Jawahar</option>
+			<option value="Kiranraj K">Kiranraj K</option>
+			<option value="Hanu Raghavapudi">Hanu Raghavapudi</option>
+			<option value="Chandra Prakash Dwivedi">Chandra Prakash Dwivedi</option>
+			<option value="Anup Bhandari">Anup Bhandari</option>
+			<option value="Karan Malhotra">Karan Malhotra</option>
+			<option value="M. Muthaiah">M. Muthaiah</option>
+			<option value="Mallidi Vasishta">Mallidi Vasishta</option>
+			<option value="Gautham Vasudev Menon">Gautham Vasudev Menon</option>
+			<option value="Vineeth Sreenivasan">Vineeth Sreenivasan</option>
+			<option value="Vishnu Sasi Shankar">Vishnu Sasi Shankar</option>
+			<option value="Madhavan">Madhavan</option>
+			<option value="Dijo Jose Antony">Dijo Jose Antony</option>
+			<option value="Shaji Kailas">Shaji Kailas</option>
+			<option value="Sailesh Kolanu">Sailesh Kolanu</option>
+			<option value="Vipin Das">Vipin Das</option>
+			<option value="Vivek Athreya">Vivek Athreya</option>
+			<option value="Nissam Basheer">Nissam Basheer</option>
+			<option value="Yograj Bhat">Yograj Bhat</option>
+			<option value="K. Madhu">K. Madhu</option>
+			<option value="Vimal Krishna">Vimal Krishna</option>
+			<option value="Haresh Narayan">Haresh Narayan</option>
+			<option value="Darling Krishna">Darling Krishna</option>
+			<option value="Jithu Madhavan">Jithu Madhavan</option>
+			<option value="Rohit Dhawan">Rohit Dhawan</option>
+			<option value="R. Chandru">R. Chandru</option>
+			<option value="Venu Yeldandi">Venu Yeldandi</option>
+			<option value="Vishwak Sen">Vishwak Sen</option>
+		</select>
+	</div>
+	
+	<div>
+		<p class="para">Actor 1</p>
+		<select name='actor1'>
+			<option value="Abhay Deol">Abhay Deol</option> 
+			<option value="Adil Hussain">Adil Hussain</option>
+			<option value="Ajay Devgn">Ajay Devgn</option>
+			<option value="Akshay Kumar">Akshay Kumar</option>
+			<option value="Akshaye Khanna">Akshaye Khanna</option>
+			<option value="Amitabh Bachchan">Amitabh Bachchan</option>
+			<option value="Amjad Khan">Amjad Khan</option>
+			<option value="Amir Khan">Amir Khan</option>
+			<option value="Amol Palekar">Amol Palekar</option>
+			<option value="Amole Gupte">Amole Gupte</option>
+			<option value="Amrish Puri">Amrish Puri</option>
+			<option value="Anil Kapoor">Anil Kapoor</option>
+			<option value="Annu Kapoor">Annu Kapoor</option>
+			<option value="Anupam Kher">Anupam Kher</option>
+			<option value="Anushka Shetty">Anushka Shetty</option>
+			<option value="Anushka Sharma">Anushka Sharma</option>
+			<option value="Arshad Warsi">Arshad Warsi</option>
+			<option value="Aruna Irani">Aruna Irani</option>
+			<option value="Ashish Vidyarthi">Ashish Vidyarthi</option>
+			<option value="Asrani">Asrani</option>
+			<option value="Atul Kulkarni">Atul Kulkarni</option>
+			<option value="Ayushmann Khurrana">Ayushmann Khurrana</option>
+			<option value="Boman Irani">Boman Irani</option>
+			<option value="Chiranjeevi">Chiranjeevi</option>
+			<option value="Chunky Panday">Chunky Panday</option>
+			<option value="Danny Denzongpa">Danny Denzongpa</option>
+			<option value="Darsheel Safary">Darsheel Safary</option>
+			<option value="Deepika Padukone">Deepika Padukone</option>
+			<option value="Deepti Naval">Deepti Naval</option>
+			<option value="Dev Anand">Dev Anand</option>
+			<option value="Dharmendra">Dharmendra</option>
+			<option value="Dilip Kumar">Dilip Kumar</option>
+			<option value="Dimple Kapadia">Dimple Kapadia</option>
+			<option value="Farhan Akhtar">Farhan Akhtar</option>
+			<option value="Farida Jalal">Farida Jalal</option>
+			<option value="Farooq Shaikh">Farooq Shaikh</option>
+			<option value="Girish Karnad">Girish Karnad</option>
+			<option value="Govinda">Govinda</option>
+			<option value="Gulshan Grover">Gulshan Grover</option>
+			<option value="Hrithik Roshan">Hrithik Roshan</option>
+			<option value="Huma Qureshi">Huma Qureshi</option>
+			<option value="Irrfan Khan">Irrfan Khan</option>
+			<option value="Jaspal Bhatti">Jaspal Bhatti</option>
+			<option value="Jeetendra">Jeetendra</option>
+			<option value="Jimmy Sheirgill">Jimmy Sheirgill</option>
+			<option value="Johnny Lever">Johnny Lever</option>
+			<option value="Kader Khan">Kader Khan</option>
+			<option value="Kajol">Kajol</option>
+			<option value="Kalki Koechlin">Kalki Koechlin</option>
+			<option value="Kamal Haasan">Kamal Haasan</option>
+			<option value="Kangana Ranaut">Kangana Ranaut</option>
+			<option value="Kay Kay Menon">Kay Kay Menon</option>
+			<option value="Konkona Sen Sharma">Konkona Sen Sharma</option>
+			<option value="Kulbhushan Kharbanda">Kulbhushan Kharbanda</option>
+			<option value="Lara Dutta">Lara Dutta</option>
+			<option value="Madhavan">Madhavan</option>
+			<option value="Madhuri Dixit">Madhuri Dixit</option>
+			<option value="Mammootty">Mammootty</option>
+			<option value="Manoj Bajpayee">Manoj Bajpayee</option>
+			<option value="Manoj Pahwa">Manoj Pahwa</option>
+			<option value="Mehmood">Mehmood</option>
+			<option value="Mita Vashisht">Mita Vashisht</option>
+			<option value="Mithun Chakraborty">Mithun Chakraborty</option>
+			<option value="Mohanlal">Mohanlal</option>
+			<option value="Mohnish Bahl">Mohnish Bahl</option>
+			<option value="Mukesh Khanna">Mukesh Khanna</option>
+			<option value="Mukul Dev">Mukul Dev</option>
+			<option value="Nagarjuna Akkineni">Nagarjuna Akkineni</option>
+			<option value="Nana Patekar">Nana Patekar</option>
+			<option value="Nandita Das">Nandita Das</option>
+			<option value="Nargis">Nargis</option>
+			<option value="Naseeruddin Shah">Naseeruddin Shah</option>
+			<option value="Navin Nischol">Navin Nischol</option>
+			<option value="Nawazuddin Siddiqui">Nawazuddin Siddiqui</option>
+			<option value="Neeraj Kabi">Neeraj Kabi</option>
+			<option value="Nirupa Roy">Nirupa Roy</option>
+			<option value="Om Puri">Om Puri</option>
+			<option value="Pankaj Kapur">Pankaj Kapur</option>
+			<option value="Pankaj Tripathi">Pankaj Tripathi</option>
+			<option value="Paresh Rawal">Paresh Rawal</option>
+			<option value="Pawan Malhotra">Pawan Malhotra</option>
+			<option value="Pooja Bhatt">Pooja Bhatt</option>
+			<option value="Prabhas">Prabhas</option>
+			<option value="Prabhu Deva">Prabhu Deva</option>
+			<option value="Prakash Raj">Prakash Raj</option>
+			<option value="Pran">Pran</option>
+			<option value="Prem Chopra">Prem Chopra</option>
+			<option value="Priyanka Chopra">Priyanka Chopra</option>
+			<option value="Raaj Kumar">Raaj Kumar</option>
+			<option value="Radhika Apte">Radhika Apte</option>
+			<option value="Rahul Bose">Rahul Bose</option>
+			<option value="Raj Babbar">Raj Babbar</option>
+			<option value="Raj Kapoor">Raj Kapoor</option>
+			<option value="Rajat Kapoor">Rajat Kapoor</option>
+			<option value="Rajesh Khanna">Rajesh Khanna</option>
+			<option value="Rajinikanth">Rajinikanth</option>
+			<option value="Rajit Kapoor">Rajit Kapoor</option>
+			<option value="Rajkummar Rao">Rajkummar Rao</option>
+			<option value="Rajpal Yadav">Rajpal Yadav</option>
+			<option value="Rakhee Gulzar">Rakhee Gulzar</option>
+			<option value="Ramya Krishnan">Ramya Krishnan</option>
+			<option value="Ranbir Kapoor">Ranbir Kapoor</option>
+			<option value="Randeep Hooda">Randeep Hooda</option>
+			<option value="Rani Mukerji">Rani Mukerji</option>
+			<option value="Ranveer Singh">Ranveer Singh</option>
+			<option value="Ranvir Shorey">Ranvir Shorey</option>
+			<option value="Ratna Pathak Shah">Ratna Pathak Shah</option>
+			<option value="Rekha">Rekha</option>
+			<option value="Richa Chadha">Richa Chadha</option>
+			<option value="Rishi Kapoor">Rishi Kapoor</option>
+			<option value="Riteish Deshmukh">Riteish Deshmukh</option>
+			<option value="Sachin Khedekar">Sachin Khedekar</option>
+			<option value="Saeed Jaffrey">Saeed Jaffrey</option>
+			<option value="Saif Ali Khan">Saif Ali Khan</option>
+			<option value="Salman Khan">Salman Khan</option>
+			<option value="Sanjay Dutt">Sanjay Dutt</option>
+			<option value="Sanjay Mishra">Sanjay Mishra</option>
+			<option value="Shabana Azmi">Shabana Azmi</option>
+			<option value="Shah Rukh Khan">Shah Rukh Khan</option>
+			<option value="Sharman Joshi">Sharman Joshi</option>
+			<option value="Sharmila Tagore">Sharmila Tagore</option>
+			<option value="Shashi Kapoor">Shashi Kapoor</option>
+			<option value="Shreyas Talpade">Shreyas Talpade</option>
+			<option value="Smita Patil">Smita Patil</option>
+			<option value="Soumitra Chatterjee">Soumitra Chatterjee</option>
+			<option value="Sridevi">Sridevi</option>
+			<option value="Sunil Shetty">Sunil Shetty</option>
+			<option value="Sunny Deol">Sunny Deol</option>
+			<option value="Tabu">Tabu</option>
+			<option value="Tinnu Anand">Tinnu Anand</option>
+			<option value="Utpal Dutt">Utpal Dutt</option>
+			<option value="Varun Dhawan">Varun Dhawan</option>
+			<option value="Vidya Balan">Vidya Balan</option>
+			<option value="Vinod Khanna">Vinod Khanna</option>
+			<option value="Waheeda Rehman">Waheeda Rehman</option>
+			<option value="Zarina Wahab">Zarina Wahab</option>
+			<option value="Zeenat Aman">Zeenat Aman</option>
+		</select>
+	</div>
+	
+	<div>
+		<p class="para">Actor 2</p>
+		<select name='actor2'>
+		<option value="Abhay Deol">Abhay Deol</option> 
+			<option value="Adil Hussain">Adil Hussain</option>
+			<option value="Ajay Devgn">Ajay Devgn</option>
+			<option value="Akshay Kumar">Akshay Kumar</option>
+			<option value="Akshaye Khanna">Akshaye Khanna</option>
+			<option value="Amitabh Bachchan">Amitabh Bachchan</option>
+			<option value="Amjad Khan">Amjad Khan</option>
+			<option value="Amir Khan">Amir Khan</option>
+			<option value="Amol Palekar">Amol Palekar</option>
+			<option value="Amole Gupte">Amole Gupte</option>
+			<option value="Amrish Puri">Amrish Puri</option>
+			<option value="Anil Kapoor">Anil Kapoor</option>
+			<option value="Annu Kapoor">Annu Kapoor</option>
+			<option value="Anupam Kher">Anupam Kher</option>
+			<option value="Anushka Shetty">Anushka Shetty</option>
+			<option value="Anushka Sharma">Anushka Sharma</option>
+			<option value="Arshad Warsi">Arshad Warsi</option>
+			<option value="Aruna Irani">Aruna Irani</option>
+			<option value="Ashish Vidyarthi">Ashish Vidyarthi</option>
+			<option value="Asrani">Asrani</option>
+			<option value="Atul Kulkarni">Atul Kulkarni</option>
+			<option value="Ayushmann Khurrana">Ayushmann Khurrana</option>
+			<option value="Boman Irani">Boman Irani</option>
+			<option value="Chiranjeevi">Chiranjeevi</option>
+			<option value="Chunky Panday">Chunky Panday</option>
+			<option value="Danny Denzongpa">Danny Denzongpa</option>
+			<option value="Darsheel Safary">Darsheel Safary</option>
+			<option value="Deepika Padukone">Deepika Padukone</option>
+			<option value="Deepti Naval">Deepti Naval</option>
+			<option value="Dev Anand">Dev Anand</option>
+			<option value="Dharmendra">Dharmendra</option>
+			<option value="Dilip Kumar">Dilip Kumar</option>
+			<option value="Dimple Kapadia">Dimple Kapadia</option>
+			<option value="Farhan Akhtar">Farhan Akhtar</option>
+			<option value="Farida Jalal">Farida Jalal</option>
+			<option value="Farooq Shaikh">Farooq Shaikh</option>
+			<option value="Girish Karnad">Girish Karnad</option>
+			<option value="Govinda">Govinda</option>
+			<option value="Gulshan Grover">Gulshan Grover</option>
+			<option value="Hrithik Roshan">Hrithik Roshan</option>
+			<option value="Huma Qureshi">Huma Qureshi</option>
+			<option value="Irrfan Khan">Irrfan Khan</option>
+			<option value="Jaspal Bhatti">Jaspal Bhatti</option>
+			<option value="Jeetendra">Jeetendra</option>
+			<option value="Jimmy Sheirgill">Jimmy Sheirgill</option>
+			<option value="Johnny Lever">Johnny Lever</option>
+			<option value="Kader Khan">Kader Khan</option>
+			<option value="Kajol">Kajol</option>
+			<option value="Kalki Koechlin">Kalki Koechlin</option>
+			<option value="Kamal Haasan">Kamal Haasan</option>
+			<option value="Kangana Ranaut">Kangana Ranaut</option>
+			<option value="Kay Kay Menon">Kay Kay Menon</option>
+			<option value="Konkona Sen Sharma">Konkona Sen Sharma</option>
+			<option value="Kulbhushan Kharbanda">Kulbhushan Kharbanda</option>
+			<option value="Lara Dutta">Lara Dutta</option>
+			<option value="Madhavan">Madhavan</option>
+			<option value="Madhuri Dixit">Madhuri Dixit</option>
+			<option value="Mammootty">Mammootty</option>
+			<option value="Manoj Bajpayee">Manoj Bajpayee</option>
+			<option value="Manoj Pahwa">Manoj Pahwa</option>
+			<option value="Mehmood">Mehmood</option>
+			<option value="Mita Vashisht">Mita Vashisht</option>
+			<option value="Mithun Chakraborty">Mithun Chakraborty</option>
+			<option value="Mohanlal">Mohanlal</option>
+			<option value="Mohnish Bahl">Mohnish Bahl</option>
+			<option value="Mukesh Khanna">Mukesh Khanna</option>
+			<option value="Mukul Dev">Mukul Dev</option>
+			<option value="Nagarjuna Akkineni">Nagarjuna Akkineni</option>
+			<option value="Nana Patekar">Nana Patekar</option>
+			<option value="Nandita Das">Nandita Das</option>
+			<option value="Nargis">Nargis</option>
+			<option value="Naseeruddin Shah">Naseeruddin Shah</option>
+			<option value="Navin Nischol">Navin Nischol</option>
+			<option value="Nawazuddin Siddiqui">Nawazuddin Siddiqui</option>
+			<option value="Neeraj Kabi">Neeraj Kabi</option>
+			<option value="Nirupa Roy">Nirupa Roy</option>
+			<option value="Om Puri">Om Puri</option>
+			<option value="Pankaj Kapur">Pankaj Kapur</option>
+			<option value="Pankaj Tripathi">Pankaj Tripathi</option>
+			<option value="Paresh Rawal">Paresh Rawal</option>
+			<option value="Pawan Malhotra">Pawan Malhotra</option>
+			<option value="Pooja Bhatt">Pooja Bhatt</option>
+			<option value="Prabhas">Prabhas</option>
+			<option value="Prabhu Deva">Prabhu Deva</option>
+			<option value="Prakash Raj">Prakash Raj</option>
+			<option value="Pran">Pran</option>
+			<option value="Prem Chopra">Prem Chopra</option>
+			<option value="Priyanka Chopra">Priyanka Chopra</option>
+			<option value="Raaj Kumar">Raaj Kumar</option>
+			<option value="Radhika Apte">Radhika Apte</option>
+			<option value="Rahul Bose">Rahul Bose</option>
+			<option value="Raj Babbar">Raj Babbar</option>
+			<option value="Raj Kapoor">Raj Kapoor</option>
+			<option value="Rajat Kapoor">Rajat Kapoor</option>
+			<option value="Rajesh Khanna">Rajesh Khanna</option>
+			<option value="Rajinikanth">Rajinikanth</option>
+			<option value="Rajit Kapoor">Rajit Kapoor</option>
+			<option value="Rajkummar Rao">Rajkummar Rao</option>
+			<option value="Rajpal Yadav">Rajpal Yadav</option>
+			<option value="Rakhee Gulzar">Rakhee Gulzar</option>
+			<option value="Ramya Krishnan">Ramya Krishnan</option>
+			<option value="Ranbir Kapoor">Ranbir Kapoor</option>
+			<option value="Randeep Hooda">Randeep Hooda</option>
+			<option value="Rani Mukerji">Rani Mukerji</option>
+			<option value="Ranveer Singh">Ranveer Singh</option>
+			<option value="Ranvir Shorey">Ranvir Shorey</option>
+			<option value="Ratna Pathak Shah">Ratna Pathak Shah</option>
+			<option value="Rekha">Rekha</option>
+			<option value="Richa Chadha">Richa Chadha</option>
+			<option value="Rishi Kapoor">Rishi Kapoor</option>
+			<option value="Riteish Deshmukh">Riteish Deshmukh</option>
+			<option value="Sachin Khedekar">Sachin Khedekar</option>
+			<option value="Saeed Jaffrey">Saeed Jaffrey</option>
+			<option value="Saif Ali Khan">Saif Ali Khan</option>
+			<option value="Salman Khan">Salman Khan</option>
+			<option value="Sanjay Dutt">Sanjay Dutt</option>
+			<option value="Sanjay Mishra">Sanjay Mishra</option>
+			<option value="Shabana Azmi">Shabana Azmi</option>
+			<option value="Shah Rukh Khan">Shah Rukh Khan</option>
+			<option value="Sharman Joshi">Sharman Joshi</option>
+			<option value="Sharmila Tagore">Sharmila Tagore</option>
+			<option value="Shashi Kapoor">Shashi Kapoor</option>
+			<option value="Shreyas Talpade">Shreyas Talpade</option>
+			<option value="Smita Patil">Smita Patil</option>
+			<option value="Soumitra Chatterjee">Soumitra Chatterjee</option>
+			<option value="Sridevi">Sridevi</option>
+			<option value="Sunil Shetty">Sunil Shetty</option>
+			<option value="Sunny Deol">Sunny Deol</option>
+			<option value="Tabu">Tabu</option>
+			<option value="Tinnu Anand">Tinnu Anand</option>
+			<option value="Utpal Dutt">Utpal Dutt</option>
+			<option value="Varun Dhawan">Varun Dhawan</option>
+			<option value="Vidya Balan">Vidya Balan</option>
+			<option value="Vinod Khanna">Vinod Khanna</option>
+			<option value="Waheeda Rehman">Waheeda Rehman</option>
+			<option value="Zarina Wahab">Zarina Wahab</option>
+			<option value="Zeenat Aman">Zeenat Aman</option>
+		</select>
+	</div>
+	
+	<div>
+		<p class="para">Language</p>
+		<select name='language' required>
+			<option value="Telugu">Telugu</option>
+			<option value="Hindi">Hindi</option>
+			<option value="Tamil">Tamil</option>
+			<option value="Kannada">Kannada</option>
+			<option value="Malayalam">Malayalam</option>
+			<option value="Punjabi">Punjabi</option>
+		</select>
+	</div>
+	
+	<div>
+		<p class="para">Year</p>
+		<select name='year' required>
+			<option value="2017">2017</option>
+			<option value="2018">2018</option>
+			<option value="2019">2019</option>
+			<option value="2020">2020</option>
+			<option value="2021">2021</option>
+			<option value="2022">2022</option>
+			<option value="2023">2023</option>
+		</select>
+	</div>
+
+	</div>
+	
+	<fieldset>
+    <legend>Genre Type:</legend>
+
+    <div>
+      <input type="checkbox" id="action" name="action" onclick="onvaluechange(action)">
+      <label for="action">Action</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="thriller" name="thriller" onclick="onvaluechange(thriller)">
+      <label for="thriller">Thriller</label>
+    </div>
+	
+	<div>
+      <input type="checkbox" id="scifi" name="scifi" onclick="onvaluechange(scifi)">
+      <label for="scifi">SciFi</label>
+    </div>
+	
+	<div>
+      <input type="checkbox" id="biography" name="biography" onclick="onvaluechange(biography)">
+      <label for="biography">Biography</label>
+    </div>
+	
+	<div>
+      <input type="checkbox" id="drama" name="drama" onclick="onvaluechange(drama)">
+      <label for="drama">Drama</label>
+    </div>
+	
+	<div>
+      <input type="checkbox" id="history" name="history" onclick="onvaluechange(history)">
+      <label for="history">History</label>
+    </div>
+	
+	<div>
+      <input type="checkbox" id="romance" name="romance" onclick="onvaluechange(romance)">
+      <label for="romance">Romance</label>
+    </div>
+	
+	<div>
+      <input type="checkbox" id="comedy" name="comedy" onclick="onvaluechange(comedy)">
+      <label for="comedy">Comedy</label>
+    </div>
+	
+	<div>
+      <input type="checkbox" id="crime" name="crime" onclick="onvaluechange(crime)">
+      <label for="crime">Crime</label>
+    </div>
+	
+	<div>
+      <input type="checkbox" id="adventure" name="adventure" onclick="onvaluechange(adventure)">
+      <label for="adventure">Adventure</label>
+    </div>
+	
+	<div>
+      <input type="checkbox" id="horror" name="horror" onclick="onvaluechange(horror)">
+      <label for="horror">Horror</label>
+    </div>
+	
+	<div>
+      <input type="checkbox" id="sport" name="sport" onclick="onvaluechange(sport)">
+      <label for="sport">Sport</label>
+    </div>
+	
+	<div>
+      <input type="checkbox" id="fantacy" name="fantacy" onclick="onvaluechange(fantacy)">
+      <label for="fantacy">Fantasy</label>
+    </div>
+	
+	<div>
+      <input type="checkbox" id="war" name="war" onclick="onvaluechange(war)">
+      <label for="war">War</label>
+    </div>
+	
+	</fieldset>
+	
+	<label for="mrating">Movie Ratings:</label>
+	<input type="text" id="mrating" name="mrating"><br>
+	
+	<label for="mvotes">Movie Votes:</label>
+	<input type="text" id="mvotes" name="mvotes"><br>
+	
+	<label for="wwgross">Worldwide Gross:</label>
+	<input type="text" id="wwgross" name="wwgross"><br>
+	
+	<input id="submit123" type="submit">
+	
+	<h1 class="heading1">Predicted Result</h1>
+	{{data}}
+	
+	</form>
+</div>
+	
+</div>	
+	
+	<script>
+		function onvaluechange(index){
+			value_action = value_action.getElementById(index);
+			value_action.addEventListener('change', e => {
+
+			if(e.target.checked)
+				e.value = 1
+			else
+				e.value = 0
+			});
+		}
+	</script>
+ </body>
+ 
+ </html>
